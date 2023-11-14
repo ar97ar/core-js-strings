@@ -271,7 +271,6 @@ function reverseString(str) {
 function orderAlphabetically(str) {
   return str.split('').sort().join('');
 }
-console.log(orderAlphabetically('webmaster'));
 
 /**
  * Checks if a given string contains a specified substring.
@@ -373,7 +372,7 @@ function findLongestWord(sentence) {
 function reverseWords(str) {
   return str
     .split(' ')
-    .map(function (value) {
+    .map(function re(value) {
       return value.split('').reverse().join('');
     })
     .join(' ');
@@ -393,7 +392,7 @@ function reverseWords(str) {
 function invertCase(str) {
   return str
     .split('')
-    .map(function (value) {
+    .map(function ch(value) {
       let res = value;
       if (value === value.toUpperCase()) {
         res = value.toLowerCase();
